@@ -1,0 +1,24 @@
+.title {
+  margin: 0;
+  font-family: var(--second-family);
+  font-size: 48px;
+  line-height: 1.17;
+  color: var(--black);
+  margin-bottom: 24px;
+  position: relative;
+
+& span {
+    position: relative;
+   
+}
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--green);
+    width: 304px;
+    height: 8px;
+    top: 50%;
+    left: -15%;
+  }
+}

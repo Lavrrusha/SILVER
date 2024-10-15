@@ -1,4 +1,65 @@
 @charset "UTF-8";
+:root {
+  --font-family: "Gilroy", "sans-serif";
+  --second-family: "Unbounded", sans-serif;
+  --green: #60ea05;
+  --violet: #7e5af0;
+  --white: #fff;
+  --grey: #dddddd;
+  --black: #000;
+  --line: #d2cedb;
+  --text: #49484b;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded/unbounded-v8-latin-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded/unbounded-v8-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/Unbounded/unbounded-v8-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -181,67 +242,6 @@ template {
   display: none;
 }
 
-:root {
-  --font-family: "Gilroy", "sans-serif";
-  --second-family: "Unbounded", sans-serif;
-  --green: #60ea05;
-  --violet: #7e5af0;
-  --white: #fff;
-  --grey: #dddddd;
-  --black: #000;
-  --line: #d2cedb;
-  --text: #49484b;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy/Gilroy-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../fonts/Unbounded/unbounded-v8-latin-300.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../fonts/Unbounded/unbounded-v8-latin-regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../fonts/Unbounded/unbounded-v8-latin-500.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 html {
   box-sizing: border-box;
   height: 100%;
@@ -331,39 +331,30 @@ svg * {
   overflow-x: auto; /* Разрешает горизонтальный скролл */
 }
 
-.main-navigation {
-  padding: 50px;
-  color: var(--line);
-}
-.main-navigation__title {
+.title {
   margin: 0;
   font-family: var(--second-family);
-  font-weight: 500;
   font-size: 48px;
   line-height: 1.17;
   color: var(--black);
   margin-bottom: 24px;
+  position: relative;
 }
-.main-navigation__descripton {
-  margin: 0;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
-  color: var(--black);
-  margin-bottom: 20px;
+.title span {
+  position: relative;
 }
-.main-navigation__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.6;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--black);
+.title::before {
+  content: "";
+  position: absolute;
+  background-color: var(--green);
+  width: 304px;
+  height: 8px;
+  top: 50%;
+  left: -15%;
 }
-.main-navigation__link {
-  padding: 12px;
+
+.wrapper {
+  width: 100%;
+  max-width: 1408px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

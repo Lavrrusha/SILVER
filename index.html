@@ -12,7 +12,7 @@
     <meta name="keywords"
         content="SILVER, Автомобили, Авто с пробегом, Авто в кредит, Новые Авто, Продажа автомобилей, Компания Сильвер">
 
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base/_normalize.scss">
     <link rel="stylesheet" href="./css/main.css">
 
     <title>Продажа Автомобилей "Сильвер"</title>
@@ -22,54 +22,71 @@
 
     <header class="main-navigation">
 
-        <h1 class="main-navigation__title">Список готовых страниц</h1>
+        <div class="wrapper">
+            <h1 class="title title--decor"><span>Список готовых страниц</span></h1>
 
-        <p class="main-navigation__descripton">Это техническая страничка проекта Сильвер, на которой представлены все
-            свёрстанные странички.</p>
+            <p class="main-navigation__description">Это техническая страничка проекта Сильвер, на которой представлены
+                все свёрстанные странички.</p>
 
-        <ul class="main-navigation__list">
+            <ul class="main-navigation__list">
 
-            <li class="main-navigation__link">
-                <a href="./home.html">Главная</a>
-            </li>
+                <li class="main-navigation__link"><a href="./home.html">Главная</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./used-cars.html">Список авто с пробегом</a>
-            </li>
+                <li class="main-navigation__link"><a href="./used-cars.html">Список авто с пробегом</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./used-cars_detail.html">Авто с пробегом детальная</a>
-            </li>
+                <li class="main-navigation__link"><a href="./used-cars-detail.html">Авто с пробегом детальная</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./new-cars.html">Список новых авто</a>
-            </li>
+                <li class="main-navigation__link"><a href="./new-cars.html">Список новых авто</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./new-cars_detail.html">Авто новое детальное</a>
-            </li>
+                <li class="main-navigation__link"><a href="./new-cars-detail.html">Авто новое детальное</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./brand-cars.html">Марка авто</a>
-            </li>
+                <li class="main-navigation__link"><a href="./brand-cars.html">Марка авто</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./privilege.html">Услуги</a>
-            </li>
+                <li class="main-navigation__link"><a href="./services.html">Услуги</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./service.html">Сервис</a>
-            </li>
+                <li class="main-navigation__link"><a href="./service.html">Сервис</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./about-us.html">О компании</a>
-            </li>
+                <li class="main-navigation__link"><a href="./about-us.html">О компании</a></li>
 
-            <li class="main-navigation__link">
-                <a href="./contacts.html">Контакты</a>
-            </li>
+                <li class="main-navigation__link"><a href="./contacts.html">Контакты</a></li>
 
-        </ul>
+            </ul>
+        </div>
+
+
+        <style>
+            .main-navigation {
+                padding: 50px;
+                color: var(--line);
+            }
+
+            .main-navigation__description {
+                margin: 0;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--black);
+                margin-bottom: 20px;
+            }
+
+            .main-navigation__list {
+                margin: 0;
+                padding: 0;
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 1.6;
+                list-style: none;
+                text-transform: uppercase;
+                text-decoration: underline;
+                color: var(--black);
+            }
+
+            .main-navigation__link {
+                padding: 12px;
+            }
+        </style>
+
     </header>
 
 </body>
