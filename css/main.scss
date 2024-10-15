@@ -1,0 +1,28 @@
+// Базовые стили
+
+@import "./base/normalize";
+@import "./base/root";
+@import "./base/fonts";
+@import "./base/global";
+@import "./base/support";
+
+
+// Блоки
+
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/wrapper";
+
+// Смысловые секции
+
+@import "./sections/main-navigation";
+
+
+
+
+
+// @import "./base/
+// @import "./effects/
+// @import "./blocks/
+// @import "./sections/
+// @import "./pages/
