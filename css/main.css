@@ -60,6 +60,27 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/unbounded-v7-cyrillic_latin-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url("../fonts/unbounded-v7-cyrillic_latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/Unbounded/unbounded-v7-cyrillic_latin-500.woff2") format("woff2");
+  font-family: "Unbounded";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
