@@ -9,6 +9,7 @@
   --black: #000;
   --line: #d2cedb;
   --text: #49484b;
+  --background: #f2effa;
 }
 
 @font-face {
@@ -281,6 +282,9 @@ body {
   position: relative;
   overflow-x: hidden;
   font-style: normal;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--text);
   line-height: 1.5;
   max-width: 100%;
   width: 100%;
@@ -362,9 +366,6 @@ svg * {
   margin-bottom: 24px;
   position: relative;
 }
-.title span {
-  position: relative;
-}
 .title::before {
   content: "";
   position: absolute;
@@ -373,10 +374,12 @@ svg * {
   height: 8px;
   top: 50%;
   left: -15%;
+  z-index: -1;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1408px;
-  margin: 0 auto;
+  max-width: 1600px;
+  margin-inline: auto;
+  padding-inline: 48px;
 }/*# sourceMappingURL=main.css.map */
