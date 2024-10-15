@@ -1,9 +1,11 @@
 // Базовые стили
 
-@import "./base/normalize";
 @import "./base/root";
 @import "./base/fonts";
+
+@import "./base/normalize";
 @import "./base/global";
+
 @import "./base/support";
 
 
