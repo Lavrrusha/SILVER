@@ -10,6 +10,7 @@
   --line: #d2cedb;
   --text: #49484b;
   --background: #f2effa;
+  --footer-bg: #0B0B0C;
 }
 
 @font-face {
@@ -375,13 +376,20 @@ svg * {
   background-color: var(--green);
   width: 304px;
   height: 8px;
-  top: 50%;
+  top: 10%;
   left: -15%;
+  transform: translate(-8%, 10%);
 }
 
 .wrapper {
   width: 100%;
   max-width: 1600px;
-  margin-inline: auto;
-  padding-inline: 48px;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  padding-top: 48px;
+  padding-bottom: 38px;
 }/*# sourceMappingURL=main.css.map */
