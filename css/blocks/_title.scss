@@ -16,12 +16,12 @@
 
   &::before {
     content: "";
+   
     position: absolute;
     background-color: var(--green);
     width: 304px;
     height: 8px;
-    top: 10%;
+    top: 50%;
     left: -15%;
-    transform: translate(-8%, 10%);
   }
 }
