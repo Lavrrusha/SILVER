@@ -448,7 +448,7 @@ svg * {
           text-decoration-skip-ink: none;
   color: var(--white);
 }
-.footer__copyrite {
+.footer__copyright {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
@@ -457,6 +457,6 @@ svg * {
   line-height: 171%;
   color: var(--white);
 }
-.footer__copyrite span {
+.footer__copyright span {
   color: #b5b5b6;
 }/*# sourceMappingURL=main.css.map */
