@@ -62,14 +62,17 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 2.29;
+
     text-decoration: underline;
     text-decoration-skip-ink: none;
+
     color: var(--white);
   }
 
   &__copyright {
     padding: 0;
     margin: 0;
+    
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
