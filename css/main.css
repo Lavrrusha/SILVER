@@ -376,7 +376,7 @@ svg * {
   background-color: var(--green);
   width: 304px;
   height: 8px;
-  top: 50%;
+  top: 30px;
   left: -15%;
 }
 
