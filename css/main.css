@@ -357,6 +357,12 @@ svg * {
   overflow-x: auto; /* Разрешает горизонтальный скролл */
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .title {
   margin: 0;
   font-family: var(--second-family);
@@ -397,6 +403,42 @@ svg * {
     max-width: 100%;
     padding: 0 20px;
   }
+}
+
+.header {
+  padding-top: 50px;
+  background-color: var(--footer-bg);
+}
+.header__address {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white);
+}
+.header__phone {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white);
+}
+.header__button {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--white);
+}
+
+.menu-navigation__link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 .footer {
