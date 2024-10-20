@@ -18,7 +18,19 @@
     background-color: var(--green);
     width: 304px;
     height: 8px;
-    top: 30px;
-    left: -15%;
+    top: 26px;
+    left: -208px;
+  }
+
+  &--decor {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  &--decor::before {
+    width: 56px;
+    height: 4px;
+    top: 20px;
+    left: -23px;
   }
 }

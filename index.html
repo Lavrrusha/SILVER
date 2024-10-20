@@ -73,22 +73,21 @@
 
                         <!-- меню бургер -->
                         <li class="header__menu-button">
-                            <button>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            <button class="button">
+                                <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="18" height="2" fill="white" />
+                                    <rect y="12" width="12" height="2" fill="white" />
+                                    <rect y="6" width="24" height="2" fill="white" />
+                                </svg>
                             </button>
                         </li>
-
                     </ul>
 
-                    <div class="header__column header__nav">
-
-                    </div>
                 </div>
 
                 <!-- навигационное меню по сайту -->
-                <div class="menu-navigation">
+                <div class="header__column menu-navigation">
 
                     <ul class="menu-navigation__list list-reset">
 
@@ -119,9 +118,9 @@
                     </ul>
                 </div>
 
+                <!-- контакты -->
                 <div class="header__column">
 
-                    <!-- контакты -->
                     <ul class="header__contacts list-reset">
                         <a class="header__address" href="#">
                             <svg width="14" height="18" viewBox="0 0 14 18" fill="none"
@@ -145,14 +144,103 @@
             </div>
         </div>
 
-        <!-- выпадающее меню -->
+        <!-- выпадающее меню для ПК уменьшение до 1280px -->
         <div class="header__bottom">
 
+            <div class="wrapper">
+                <div class="drop-down-menu drop-down-menu__grid">
+
+                    <!-- навигация -->
+                    <div class="drop-down-menu__column drop-down-menu__navigation">
+
+                        <ul class="drop-down-menu__list list-reset">
+                            <li class="drop-down-menu__item"><a href="#">Новые авто</a></li>
+                            <li class="drop-down-menu__item"><a href="#">Авто с пробегом</a></li>
+                        </ul>
+
+                        <ul class="drop-down-menu__list list-reset">
+                            <li class="drop-down-menu__item"><a href="#">Услуги</a></li>
+                            <li class="drop-down-menu__item drop-down-menu__item--mod"><a href="#">Трейд-ин</a></li>
+                            <li class="drop-down-menu__item drop-down-menu__item--mod"><a href="#">Автокредитование</a>
+                            </li>
+                        </ul>
+
+                        <ul class="drop-down-menu__list list-reset">
+                            <li class="drop-down-menu__item"><a href="#">Сервис</a></li>
+                            <li class="drop-down-menu__item"><a href="#">Акции</a></li>
+                            <li class="drop-down-menu__item"><a href="#">О компании</a></li>
+                            <li class="drop-down-menu__item"><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- контакты -->
+                    <div class="drop-down-menu__column drop-down-menu__contacts">
+
+                        <a class="drop-down-menu__address" href="#">
+                            <address>Магнитогорск, ул. Лизюкова, 12</address>
+                        </a>
+
+                        <a class="drop-down-menu__phone" href="tel:+78005006040"><span>+7 800 500 60 40</span></a>
+
+                        <p class="drop-down-menu__time">Ежедневно с 9:00 - 20:00</p>
+
+                        <!-- соц. сети -->
+                        <ul class="social-list list-reset">
+
+                            <li class="social-list__item"><a href="#" target="_blank">
+                                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.0718 14C4.87188 14 0.194878 8.74474 0 0H4.10743C4.24235 6.41842 7.27038 9.13714 9.66888 9.6977V0H13.5366V5.53553C15.9051 5.2973 18.3933 2.77477 19.2328 0H23.1004C22.4558 3.41942 19.7575 5.94194 17.8387 6.97898C19.7575 7.81982 22.8307 10.02 24 14H19.7425C18.8281 11.3373 16.5497 9.27728 13.5366 8.997V14H13.0718Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item"><a href="#" target="_blank">
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.46966 8.70952L15.7685 2.77426C17.1791 2.15625 21.965 0.176244 21.965 0.176244C21.965 0.176244 24.1752 -0.688966 23.9888 1.41464C23.9275 2.27985 23.4393 5.31047 22.9463 8.58829L21.4131 18.2958C21.4131 18.2958 21.2904 19.7172 20.2478 19.9644C19.2053 20.2116 17.4857 19.0992 17.1791 18.8496C16.9338 18.6642 12.5795 15.8832 10.9826 14.5236C10.5509 14.1527 10.0627 13.4088 11.0439 12.5435C13.2541 10.5041 15.8912 7.96791 17.4834 6.36108C18.2217 5.6171 18.9552 3.88667 15.8888 5.99028L7.23922 11.8661C7.23922 11.8661 6.25797 12.4841 4.41577 11.9255C2.57593 11.3717 0.429446 10.6277 0.429446 10.6277C0.429446 10.6277 -1.04479 9.69833 1.46966 8.70952Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="social-list__item"><a href="#" target="_blank">
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.9025 5H0V20H3.86952V15.1199H11.2841L14.6671 20H19L15.2695 15.0975C16.4281 14.9176 17.2622 14.4903 17.772 13.8156C18.2817 13.141 18.5366 12.0615 18.5366 10.6222V9.4978C18.5366 8.64318 18.444 7.96855 18.2817 7.45125C18.1195 6.93403 17.8415 6.48425 17.4476 6.07946C17.0305 5.69715 16.5671 5.42729 16.011 5.24737C15.4549 5.08995 14.7597 5 13.9025 5ZM13.2769 11.8141H3.86952V8.30582H13.2769C13.8098 8.30582 14.1805 8.3958 14.3659 8.55321C14.5512 8.71062 14.6671 9.003 14.6671 9.4303V10.6897C14.6671 11.1395 14.5512 11.4318 14.3659 11.5892C14.1805 11.7466 13.8098 11.8141 13.2769 11.8141Z"
+                                            fill="white" />
+                                        <path
+                                            d="M21.5005 5C22.8805 5 24 3.88071 24 2.5C24 1.11929 22.8805 0 21.5005 0C20.1195 0 19 1.11929 19 2.5C19 3.88071 20.1195 5 21.5005 5Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="footer__column footer__bottom">
+
+                        <a class="footer__confidence" href="#"><span>Политика конфиденциальности</span></a>
+
+                        <!-- копирайт -->
+                        <p class="footer__copyright"><span>2024</span> Группа официальных диллеров "СИЛЬВЕР". <a
+                                href="#" target="_blank"><span>Все права защищены.</span></a></p>
+                    </div>
+
+                </div>
+            </div>
         </div>
+
 
     </header>
 
-
+    <!-- техническая страничка -->
     <main>
         <section class="main-navigation">
 
@@ -223,27 +311,24 @@
         </section>
 
 
+
+        <!-- варианты заголовков -->
         <div class="wrapper">
 
-            <h1>Вариации заголовков</h1>
+            <p class="text" style="font-size: 24px; font-weight: 600;">Вариации заголовков:</p>
 
             <h2 class="title"><span>Поиск автомобилей</span></h2>
 
             <h2 class="title"><span>520 автомобилей в продаже</span></h2>
 
-            <h2 class="title"><span>Специальные предложения</span></h2>
+            <h2 class="title"><span>Volkswagen Polo 2015</span></h2>
 
-            <h2 class="title"><span>Выбирайте нас</span></h2>
+            <h3 class="title title--decor"><span>Полные характеристики</span></h3>
 
-            <h3 class="title"><span>Видеообзор автомобиля</span></h3>
+            <h3 class="title title--decor"><span>Комплектация</span></h3>
 
-            <h3 class="title--decor"><span>Полные характеристики</span></h3>
+            <h3 class="title title--decor"><span>Вам могут понравиться</span></h3>
 
-            <h3 class=""><span>Комплектация</span></h3>
-
-            <h3 class=""><span>Автомобиль представлен в автосалоне</span></h3>
-
-            <h3 class=""><span>Вам могут понравиться</span></h3>
 
         </div>
 
@@ -264,8 +349,8 @@
                     </a>
                 </div>
 
+                <!-- навигация -->
                 <div class="footer__column footer__navigation">
-                    <!-- навигация -->
 
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#">Новые авто</a></li>
@@ -286,8 +371,8 @@
                     </ul>
                 </div>
 
+                <!-- контакты -->
                 <div class="footer__column footer__contacts">
-                    <!-- контакты -->
 
                     <a class="footer__address" href="#">
                         <address>Магнитогорск, ул. Лизюкова, 12</address>
@@ -297,8 +382,8 @@
 
                     <p class="footer__time">Ежедневно с 9:00 - 20:00</p>
 
-                    <ul class="social-list">
-                        <!-- соц. сети -->
+                    <!-- соц. сети -->
+                    <ul class="social-list drop-down-menu">
 
                         <li class="social-list__item"><a href="#" target="_blank">
                                 <svg width="24" height="14" viewBox="0 0 24 14" fill="none"
