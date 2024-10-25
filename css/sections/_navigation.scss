@@ -1,0 +1,27 @@
+.navigation {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2.22;
+    color: var(--white);
+  }
+
+  &__sub-item {
+  }
+
+  &__sub-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--white);
+    opacity: 0.7;
+  }
+}
