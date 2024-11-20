@@ -1,70 +1,70 @@
 .title {
   margin: 0;
+  padding: 0;
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 48px;
   line-height: 1.17;
   color: var(--black);
   margin-bottom: 24px;
-  position: relative;
 
-  & span {
+  &--dec {
     position: relative;
-  }
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: var(--green);
-    width: 304px;
-    height: 8px;
-    top: 26px;
-    left: -208px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: var(--green);
+      width: 304px;
+      height: 8px;
+      top: 26px;
+      left: -208px;
+    }
+
+    span {
+      position: relative;
+    }
   }
 
   &--small {
     font-size: 32px;
     line-height: 125%;
+
+    &::before {
+      width: 56px;
+      height: 4px;
+      top: 20px;
+      left: -23px;
+    }
   }
 
-  &--small::before {
-    width: 56px;
-    height: 4px;
-    top: 20px;
-    left: -23px;
-  }
 
-  &--midle {
+
+  &--middle {
     font-size: 24px;
     line-height: 1.33;
-  }
 
-  &--midle::before {
-    width: 48px;
-    height: 4px;
-    top: 15px;
-    left: -23px;
-  }
-
-  &--min {
-    font-size: 24px;
-    line-height: 1.33;
+    &::before {
+      width: 48px;
+      height: 4px;
+      top: 15px;
+      left: -23px;
+    }
   }
 
   &--min {
     font-size: 16px;
-    line-height: 3.5;
+    line-height: 1.33;
+    &::before {
+      width: 48px;
+      height: 2px;
+      top: 10px;
+      left: -18px;
+    }
   }
 
-  &--min::before {
-    width: 48px;
-    height: 2px;
-    top: 29px;
-    left: -18px;
+  @media (max-width: 767px) {
+
   }
 
-  &--outline-none::before {
-    width: 0;
-    height: 0;
-  }
 }

@@ -11,28 +11,18 @@
   }
 
   @media (max-width: 1023px) {
-    
-  }
+    max-width: 100%;
+    padding: 0 40px;
 
-  @media (max-width: 950px) {
   }
 
   @media (max-width: 767px) {
     max-width: 100%;
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
-  @media (max-width: 660px) {
-  }
-
-  @media (max-width: 550px) {
-  }
-
-  @media (max-width: 450px) {
-  }
 
   @media (max-width: 374px) {
-    max-width: 100%;
-    padding: 0 20px;
+
   }
 }
