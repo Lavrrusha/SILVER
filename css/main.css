@@ -455,14 +455,51 @@ svg * {
   padding: 18px;
   font-weight: 600;
   color: var(--white);
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
 }
 .button__bg-violet {
   background: var(--violet);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+}
+.button__bg-violet--circle {
+  border-radius: 50%;
+  padding: 14px 12px;
+}
+.button__bg-green {
+  background: var(--green);
+}
+.button__bg-green--radius {
+  border-radius: 20px 0 0 20px;
+}
+.button__bg-green--circle {
+  border-radius: 50%;
+  padding: 44px 36px;
+}
+.button__bg-green--circle-min {
+  border-radius: 50%;
+  padding: 17px 12px;
+}
+.button__bg-white {
+  border: 2px solid var(--white);
+  border-radius: 32px;
+}
+.button__bg-white-circle {
+  border-radius: 50%;
+  padding: 36px 44px;
+}
+.button__white {
+  border: 1px solid var(--line);
   border-radius: 20px;
+  color: var(--black);
+  background: var(--white);
+}
+.button__white--radius {
+  border: 2px solid var(--green);
+  border-radius: 0 20px 20px 0;
+  padding: 16px;
 }
 
 .title {
