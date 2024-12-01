@@ -1,0 +1,133 @@
+.btn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: transparent;
+    color: var(--white);
+
+    border-radius: 20px;
+    padding: 16px 20px;
+    min-height: 48px;
+    font-weight: 600;
+    max-width: max-content;
+    width: 100%;
+    transition: all 0.3s;
+    position: relative;
+
+    span {
+        position: relative;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--violet);
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+
+    // модификатор кнопки ЗЕЛЕНАЯ 
+    &--mod {
+        &::before {
+            background-color: var(--green);
+        }
+    }
+
+    // Кнопка в которой нет текста и есть иконка 
+    &--icon {
+        border-radius: 50%;
+        min-height: 48px;
+        padding: 14px;
+
+        &::before {
+            border-radius: 50%;
+        }
+    }
+
+    // прозрачная кнопка
+    &--two {
+        &::before {
+            background: none;
+            border: 2px solid var(--white);
+            border-radius: 32px;
+        }
+    }
+
+    &--padding {
+        padding: 16px 50px;
+    }
+
+    // высота кнопки 48px
+    &--height {
+        padding: 10px 16px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: max-content;
+        position: relative;
+
+        svg {
+            width: 20px;
+            height: auto;
+        }
+
+        &--left {
+            margin-right: 10px;
+        }
+
+
+        &--right {
+            margin-left: 10px;
+        }
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: max-content;
+        position: relative;
+        padding: 29px;
+
+        &--circle {
+            border: 8px solid var(--white);
+        }
+
+
+        &--mod {
+            &::before {
+                border: none;
+            }
+        }
+
+        svg {
+            width: 26px;
+            height: auto;
+        }
+    }
+
+    &__play {
+        padding: 42px;
+    }
+
+
+    // Наведения 
+    &:hover::before {
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+    }
+}

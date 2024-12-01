@@ -460,6 +460,7 @@ svg * {
   text-align: center;
   align-items: center;
   gap: 8px;
+  transition: all 0.5s ease;
 }
 .button__bg-violet {
   background: var(--violet);
@@ -500,6 +501,112 @@ svg * {
   border: 2px solid var(--green);
   border-radius: 0 20px 20px 0;
   padding: 16px;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 20px;
+  padding: 16px 20px;
+  min-height: 48px;
+  font-weight: 600;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn span {
+  position: relative;
+}
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--violet);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.btn--mod::before {
+  background-color: var(--green);
+}
+.btn--icon {
+  border-radius: 50%;
+  min-height: 48px;
+  padding: 14px;
+}
+.btn--icon::before {
+  border-radius: 50%;
+}
+.btn--two::before {
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 32px;
+}
+.btn--padding {
+  padding: 16px 50px;
+}
+.btn--height {
+  padding: 10px 16px;
+}
+.btn__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
+}
+.btn__icon svg {
+  width: 20px;
+  height: auto;
+}
+.btn__icon--left {
+  margin-right: 10px;
+}
+.btn__icon--right {
+  margin-left: 10px;
+}
+.btn__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
+  padding: 29px;
+}
+.btn__slider--circle {
+  border: 8px solid var(--white);
+}
+.btn__slider--mod::before {
+  border: none;
+}
+.btn__slider svg {
+  width: 26px;
+  height: auto;
+}
+.btn__play {
+  padding: 42px;
+}
+.btn:hover::before {
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
 }
 
 .title {
