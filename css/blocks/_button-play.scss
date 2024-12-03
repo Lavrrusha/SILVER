@@ -1,0 +1,43 @@
+.button-play {
+
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+    width: 100%;
+    max-width: fit-content;
+    min-height: 96px;
+    padding: 14px 35px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    transition: all 0.3s ease;
+
+    span {
+        position: relative;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--green);
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+
+    svg {
+        width: 32px;
+        height: auto;
+        background: var(--white);
+    }
+}

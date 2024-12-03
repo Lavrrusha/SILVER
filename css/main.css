@@ -444,66 +444,99 @@ svg * {
     animation-timing-function: ease-out;
   }
 }
-.button {
-  background: none;
+.button-slider {
   border: none;
   cursor: pointer;
-  display: inline-block;
+  background-color: transparent;
   width: 100%;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  padding: 18px;
+  min-height: 96px;
+  padding: 14px 35px;
   font-weight: 600;
-  color: var(--white);
-  border-radius: 20px;
   display: flex;
-  text-align: center;
   align-items: center;
-  gap: 8px;
-  transition: all 0.5s ease;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
 }
-.button__bg-violet {
-  background: var(--violet);
+.button-slider span {
+  position: relative;
 }
-.button__bg-violet--circle {
+.button-slider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green);
   border-radius: 50%;
-  padding: 14px 12px;
+  transition: all 0.3s;
 }
-.button__bg-green {
-  background: var(--green);
-}
-.button__bg-green--radius {
-  border-radius: 20px 0 0 20px;
-}
-.button__bg-green--circle {
-  border-radius: 50%;
-  padding: 44px 36px;
-}
-.button__bg-green--circle-min {
-  border-radius: 50%;
-  padding: 17px 12px;
-}
-.button__bg-white {
+.button-slider--mod::before {
+  background: none;
   border: 2px solid var(--white);
-  border-radius: 32px;
 }
-.button__bg-white-circle {
+.button-slider--circle::before {
+  border: 8px solid var(--white);
+  padding: 48px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.button-slider__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  position: relative;
+}
+.button-slider:hover::before {
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+}
+
+.button-play {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  min-height: 96px;
+  padding: 14px 35px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.button-play span {
+  position: relative;
+}
+.button-play::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--green);
   border-radius: 50%;
-  padding: 36px 44px;
+  transition: all 0.3s;
 }
-.button__white {
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  color: var(--black);
+.button-play svg {
+  width: 32px;
+  height: auto;
   background: var(--white);
-}
-.button__white--radius {
-  border: 2px solid var(--green);
-  border-radius: 0 20px 20px 0;
-  padding: 16px;
-}
-.button:hover {
-  transform: scale(1.1);
 }
 
 .btn {
@@ -579,29 +612,6 @@ svg * {
 }
 .btn__icon--right {
   margin-left: 10px;
-}
-.btn__slider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  position: relative;
-  padding: 29px;
-}
-.btn__slider--circle {
-  border: 8px solid var(--white);
-}
-.btn__slider--mod::before {
-  background: none;
-  border: 2px solid var(--white);
-}
-.btn__slider svg {
-  width: 26px;
-  height: auto;
-}
-.btn__play {
-  padding: 29px;
 }
 .btn:hover::before {
   top: -4px;

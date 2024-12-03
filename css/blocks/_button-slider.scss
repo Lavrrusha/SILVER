@@ -1,0 +1,67 @@
+.button-slider {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  width: 100%;
+  max-width: fit-content;
+  min-height: 96px;
+  padding: 14px 35px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  transition: all 0.3s ease;
+
+  span {
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--green);
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &--mod {
+    &::before {
+      background: none;
+      border: 2px solid var(--white);
+    }
+  }
+
+  &--circle {
+    &::before {
+      border: 8px solid var(--white);
+      padding: 48px;
+      max-width: fit-content;
+
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: max-content;
+    position: relative;
+  }
+
+  &:hover::before {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+  }
+}

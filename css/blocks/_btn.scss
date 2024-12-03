@@ -93,37 +93,6 @@
         }
     }
 
-    &__slider {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: max-content;
-        position: relative;
-        padding: 29px;
-
-        &--circle {
-            border: 8px solid var(--white);
-        }
-
-
-        &--mod {
-            &::before {
-                background: none;
-                border: 2px solid var(--white);
-            }
-        }
-
-        svg {
-            width: 26px;
-            height: auto;
-        }
-    }
-
-    &__play {
-        padding: 29px;
-    }
-
-
     // Наведения 
     &:hover::before {
         top: -4px;
