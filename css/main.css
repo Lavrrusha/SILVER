@@ -593,14 +593,15 @@ svg * {
   border: 8px solid var(--white);
 }
 .btn__slider--mod::before {
-  border: none;
+  background: none;
+  border: 2px solid var(--white);
 }
 .btn__slider svg {
   width: 26px;
   height: auto;
 }
 .btn__play {
-  padding: 42px;
+  padding: 29px;
 }
 .btn:hover::before {
   top: -4px;

@@ -108,7 +108,8 @@
 
         &--mod {
             &::before {
-                border: none;
+                background: none;
+                border: 2px solid var(--white);
             }
         }
 
@@ -119,7 +120,7 @@
     }
 
     &__play {
-        padding: 42px;
+        padding: 29px;
     }
 
 
